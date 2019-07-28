@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Food Survey</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="left-logo">
+                <a href="#"><img src="images/logo.png" alt="image" /></a>
+            </div>
+
+            
+            <div class="login ">
+                <a href="#" id="login" onclick="myfunction()" >Login</a>
+               <div class="popup-container" id="popup-container" style="display:none">
+                <div class="popup" id="pop" >
+                    <h2>C S E</h2>
+                    <div>
+                    <input type="text" id="username" placeholder="Username" maxlength="100" />
+                </div>
+                <div>
+                    <input type="password" id="password" placeholder="Password" maxlength="20" />
+                </div>
+                <div>
+                    <button type="submit" onclick="myfunction()" id="button1">Login</button>
+                </div>
+                    <div class="cross"><a href="#" onclick="myfunction()">x</a></div>
+                </div>
+
+               </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#">Main Survey</a></li>
+                        <li><a href="#">Food &#38; Health</a></li>
+                        <li><a href="#">Food labels &#38; You</a></li>
+                        <li><a href="#">Fruits You Eat</a></li>
+                        <li><a href="#">Consumption and Expenditure</a></li>
+                        <li><a href="#">Veggies you Eat</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+        
+        <main>
+            <div class="container">
+                <div class="section">
+                    <div class="left-image">
+                        <img src="images/banner-img.png" />
+                    </div>
+                    <div class="right-content">
+                        <p id="para1">An Online Survey on <span>food habits </span>of Indian by <span id="ind">center for Science and Environment<span></p>
+
+                    </div>
+                </div>
+                <p id="Belowtext">Foo Health and Environemnt are strongly connected,What we eat,how we eat and the way produce affects our health and environment.But do we really know?</p>
+            </div>
+            <section>
+                <div class="container">
+                    <div class="section1">
+                        <h2>WHAT IS "GOOD" OR "Bad" Food?</h2>
+                        <h4>HOW DOES IT AFFECTS OUR HEALTH? WHAT ARE IT'S CONNECTIONS WITH ENVIRONEMNT? </h4>
+                        <h4>DO WE PLAY A ROLE IN CHOOSING OUR FOOD?</h4>
+                        <h2>OR IS IT CHOSEN FOR US?</h2>
+
+                        <div class="section-left">
+                            <img src="images/food-1.png" alt="foodimage" />
+                        </div>
+                        <div class="section-left">
+                            <button id="button">START SURVEY</button>
+                        </div>
+                        <div class="section-left">
+                            <img src="images/food-2.png" alt="foodimage" />
+                        </div>
+                        </div>
+                    </div>
+            </section>
+           
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <div class="footer-left">
+                        <p>&copy copyright 2018 by center for Science and Environment All right Reserved</p>
+                    </div>
+                    <div class="footer-right">
+                        <div class="twt-image">
+                     <a href="#"><img src="images/icons8-twitter-circled-30.png"></a>
+                 </div>
+                  <div class="twt-image">
+                       <a href="#">  <img src="images/icons8-facebook-24.png"></a> 
+                   </div>
+                    <div class="twt-image">
+                         <a href="#">    <img src="images/icons8-linkedin-24.png"> </a>
+                     </div>
+                      <div class="twt-image">
+                         <a href="#"><img src="images/icons8-google-plus-24.png"></a>
+                            
+                         </div>
+
+           </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script>
+        function myfunction() {
+        
+            var x = document.getElementById("popup-container");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                
+            } else {
+                x.style.display = "none";
+               
+            }
+           
+        }
+       
+    </script>
+    <script>
+        $('#button1').click(function () {
+             
+            if ($('#username').val() == "") {
+               
+                alert("please enter username");
+            }
+            else if ($('#password').val() == "") {
+                
+                alert("please enter pasword");
+            }
+
+            else if ($('#username').val() == 'priya.tyagi@netprophetsglobal.com' && $('#password').val() == '1998') {  
+                
+                var x = document.getElementById("pop");
+                x.style.display = "none";
+                document.getElementById("login").innerHTML = "PRIYA TYAGI";
+                $("#button").attr("disabled", false);
+                 $("#button").css({"background-color":'#1b3393'});
+
+            }
+            else {
+                alert("Username or Password is incorrect!")
+            }
+        });
+        $(document).ready(function () {
+            $("#button").attr("disabled", true);
+            $('#button').click(function () {
+                var url = "screen1.html";
+                $(location).attr('href', url);
+            });
+        });
+          
+       
+       
+    </script>
+</body>
+</html>
+
+
+
+
+

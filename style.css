@@ -1,0 +1,250 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+.container{
+    width:1140px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:hidden;
+}
+
+@font-face {
+
+    font-family: 'gotham-bold';
+  src: url('fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Gotham-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Gotham-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Gotham-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Gotham-Bold.svg') format('svg'); /* Legacy iOS */
+
+}
+
+@font-face{
+    font-family: 'glyphicons-bold';
+    src: url('fonts/glyphicons-halflings-regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/glyphicons-halflings-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/glyphicons-halflings-regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/glyphicons-halflings-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('fonts/glyphicons-halflings-regular.svg') format('svg'); /* Legacy iOS */
+  
+}
+@font-face{
+    font-family: 'gotham-book';
+    src: url('fonts/gotham-book.eot'); /* IE9 Compat Modes */
+    src: url('fonts/gotham-book.woff') format('woff'), /* Super Modern Browsers */
+         url('fonts/gotham-book.ttf') format('truetype'), /* Pretty Modern Browsers */
+         url('fonts/gotham-book.svg')  format('svg'), /* Safari, Android, iOS */
+}
+
+@font-face{
+    font-family: 'gotham-light';
+    src: url('fonts/Gotham-Light.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Gotham-Light.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/Gotham-Light.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/Gotham-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Gotham-Light.svg') format('svg'); /* Legacy iOS */
+  
+}
+
+@font-face{
+    font-family: 'hinted-gotham';
+    src: url('fonts/hinted-Gotham-Thin.eot'); /* IE9 Compat Modes */
+    src: url('fonts/hinted-Gotham-Thin.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/hinted-Gotham-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/hinted-Gotham-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('fonts/hinted-Gotham-Thin.svg') format('svg'); /* Legacy iOS */
+  
+}
+
+.left-logo{
+    display:inline-block;
+}
+.login {
+    float: right;
+    padding-top: 20px;
+}
+a{
+    text-decoration:none;
+}
+.login a{
+    color:#5C69AA;
+
+}
+nav {
+    background-color: #E1E1E1;
+}
+.navigation ul li {
+    display:inline-block;
+    padding: 10px 30px;
+}
+    .navigation ul li:hover{
+        background-color: #6FBA1C;
+        
+       
+     } 
+     .navigation ul li a:hover{
+        
+        
+        color: white;
+     } 
+    .navigation ul li a {
+        color:black;
+        font-family: 'gotham-book', Fallback, sans-serif;
+    }
+     
+        
+           
+        .left-image {
+            display: inline-block;
+            width: 50%;
+        }
+.right-content{
+    
+    width:50%;
+    float:right;
+}
+.section {
+    margin-top: 22px;
+}
+#para1{
+    font-size:45px;
+    color: #808080;
+    font-family: 'hinted-gotham', Fallback, sans-serif;
+
+}
+#ind{
+    color: black;
+}
+span{
+    color:#71BB1D;
+}
+#Belowtext {
+    padding-top: 20px;
+    font-size: 21px;
+    color: #808080;
+     font-family: 'gotham-light', Fallback, sans-serif;
+}
+section {
+    background-color: #6FBA1C;
+    margin-top: 30px;
+}
+.section1 {
+          margin-top: 33px;
+        color:white;
+        overflow:hidden;
+}
+.section1 h2{
+    text-align:center;
+    padding-top:30px;
+    font-size: 34px;
+    font-family: 'gotham-bold', Fallback, sans-serif;
+}
+    .section1 h4{
+        text-align:center;
+        padding-top:10px;
+        font-size: 21px;
+        font-family: 'gotham-bold', Fallback, sans-serif;
+    }
+.section-left {
+    float: left;
+    width: 33.33%;
+}
+
+#button {
+    margin-top: 82px;
+    margin-left: 84px;
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 143px;
+   
+    border: 1px solid #5C69AA;
+    background-color: #989898;
+    color: white;
+}
+footer {
+    background-color: #2C2C2C;
+}
+.footer {
+    padding: 30px 20px;
+}
+    .footer-left  {
+    display:inline-block;
+
+}
+.footer-left p{
+    color:#585152;
+}
+.footer-right {
+    float: right;
+}
+.popup-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000dc;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: none;
+}
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#6FBA1C;
+        color: white;
+    border-radius: 4px;
+    width: 321px;
+
+}
+
+
+input {
+    color: white;
+    display: block;
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: #6FBA1C;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin-top: 20px;
+    margin-bottom: 38px;
+    width: 84%;
+    outline: none;
+    padding-bottom: 7px;
+}
+
+.popup h2 {
+    text-align: center;
+    padding-top: 50px;
+}
+ 
+#button1 {
+    width: 70px;
+    margin-left: 15px;
+    margin-bottom: 21px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    outline: none;
+}
+
+.cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 6px;
+}
+.cross a{
+    color:white;
+}
+
+.twt-image{
+    display: inline-block;
+}

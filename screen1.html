@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="screen1.css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="left-logo">
+                <a href="#"><img src="images/logo.png" alt="image" /></a>
+            </div>
+            <div class="login ">
+                <a href="#" id="login">Login</a>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="navigation">
+                    <ul>
+                        <li><a href="screen1.html">Main Survey</a></li>
+                        <li><a href="#">Food &#38; Health</a></li>
+                        <li><a href="#">Food labels &#38; You</a></li>
+                        <li><a href="#">Fruits You Eat</a></li>
+                        <li><a href="#">Consumption and Expenditure</a></li>
+                        <li><a href="#">Veggies you Eat</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="screen1-left">
+                    <div class="image1">
+                        <img src="images/your-diet.png" />
+                    </div>
+                    <div class="image2" >
+                        <img src="images/male-active.png" />
+                    </div>
+                    <div class="image2" id="male" style="display: none;">
+                        <img src="images/male.png" />
+                    </div>
+                    <div class="image2" id="female" style="display: none">
+                        <img src="images/female.png" />
+                    </div>
+
+                </div>
+
+                <div class="screen1-right">
+
+                    <p id="text">Provide Your <span id="text1">Details</span></p>
+                    <input type="text" id="txtname" placeholder="NAME" maxlength="10" />
+                    <input type="text" id="txtmobile" placeholder="MOBILE" maxlength="10" />
+                    <select id="age">
+                        <option value="0"> AGE</option>
+                        <option value="10-15">10-15</option>
+                        <option value="15-30">15-30</option>
+                        <option value="30-40">30-45</option>
+                        <option value="40-50">40-50</option>
+                    </select>
+                    <label >Gender:</label>
+                    <input type="radio" name="gender" value="male"> MALE
+                    <input type="radio" name="gender" value="female"> FEMALE
+                    <select id="country"> 
+                        <option value="0"> SELECT YOUR  COUNTRY</option>
+
+                        <option value="10-15">INDIA</option>
+                        <option value="15-30">US</option>
+                        <option value="30-40">AUSTRALIA</option>
+                        <option value="40-50">PAKISTAN</option>
+                        <option value="40-50">JAPAN</option>
+                    </select>
+                    <select id="state">
+                        <option value="0"> SELECT STATE</option>
+
+                        <option value="10-15">DELHI</option>
+                        <option value="15-30">NEWYORK</option>
+                        <option value="30-40">TURKISH</option>
+                        <option value="40-50">LAHORE</option>
+                    </select>
+                    <select id="city">
+                        <option value="0"> SELECT YOUR CITY</option>
+
+                        <option value="10-15">DELHI</option>
+                        <option value="15-30">NEWYORK</option>
+                        <option value="30-40">TURKISH</option>
+                        <option value="40-50">LAHORE</option>
+                    </select>
+                    <select id="household">
+                        <option value="0"> HOUSEHOLD TYPE</option>
+
+                        <option value="10-15">DELHI</option>
+                        <option value="15-30">NEWYORK</option>
+                        <option value="30-40">TURKISH</option>
+                        <option value="40-50">LAHORE</option>
+                    </select>
+                    <button id="continue_button">CONTINUE</button>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-left">
+                    <p>&copy copyright 2018 by center for Science and Environment All right Reserved</p>
+                </div>
+                <div class="footer-right">
+                     <div class="twt-image">
+                     <a href="#"><img src="images/icons8-twitter-circled-30.png"></a>
+                 </div>
+                  <div class="twt-image">
+                       <a href="#">  <img src="images/icons8-facebook-24.png"></a> 
+                   </div>
+                    <div class="twt-image">
+                         <a href="#">    <img src="images/icons8-linkedin-24.png"> </a>
+                     </div>
+                      <div class="twt-image">
+                         <a href="#"><img src="images/icons8-google-plus-24.png"></a>
+                            
+                         </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            document.getElementById('login').innerHTML = 'PRIYA TYAGI';
+            $('#continue_button').click(function () {
+                if ($('#txtname').val() == "") {
+                   
+                    alert("please enter username!");
+                }
+                else if ($('#txtmobile').val() == "") {
+                    
+                    alert("please enter mobile number!");
+
+                }
+                else if ($('#age').val() == "0") {
+                    
+                    alert("please enter your age!");
+                }
+                else if ($('input[name="gender"]:checked').length == 0)
+                {
+                    alert("please select  gender!");
+                }
+
+                
+                
+                else if ($('#country').val() == "0") {
+                    
+                    alert("please select  country!");
+                }
+                
+                else if ($('#state').val() == "0") {
+                   
+                    alert("please select  state!");
+                }
+                else if ($('#city').val() == "0") {
+                    
+                    alert("please select  city!");
+                }
+                else if ($('#household').val() == "0") {
+                   
+                    alert("please select  household type!");
+                }
+                else {
+                    var url = 'screen2.html';
+                    $(location).attr('href', url);
+                }
+                
+            });    
+            
+           
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        $(function(){
+
+            $('input[name=gender]').click(function(){
+            var selectedVal =  $(this).val();
+            debugger;
+                $('div.image2').css('display', 'none');
+
+            if(selectedVal == 'male'){
+                $('div#female').css('display', 'none');
+                $('div#male').css('display', 'block');
+
+            }else if(selectedVal == 'female'){
+                $('div#female').css('display', 'block');
+                $('div#male').css('display', 'none');
+
+            }
+        });
+
+
+
+
+        })
+
+           
+    
+    </script>
+</body>
+</html>

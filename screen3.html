@@ -1,0 +1,129 @@
+<html>
+<head>
+    <link rel="stylesheet" href="screen2.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="left-logo">
+                <a href="#"><img src="images/logo.png" alt="image" /></a>
+            </div>
+            <div class="login ">
+                <a href="#" id="login">Login</a>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="navigation">
+                    <ul>
+                        <li><a href="screen1.html">Main Survey</a></li>
+                        <li><a href="#">Food &#38; Health</a></li>
+                        <li><a href="#">Food labels &#38; You</a></li>
+                        <li><a href="#">Fruits You Eat</a></li>
+                        <li><a href="#">Consumption and Expenditure</a></li>
+                        <li><a href="#">Veggies you Eat</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+    <div class="container">
+        <div class="screen1-left">
+            <div class="image1">
+                <img src="images/your-diet.png" />
+            </div>
+             <div class="image2" >
+                        <img src="images/male-active.png" />
+                    </div>
+                    <div class="image2" id="male" style="display: none;">
+                        <img src="images/male.png" />
+                    </div>
+                    <div class="image2" id="female" style="display: none">
+                        <img src="images/female.png" />
+                    </div>
+        </div>
+
+        <div class="screen1-right">
+            <p id="text">How many  <span id="text1">times  a day</span> do you eat following foods? </p>
+            <div class="cereal">
+                <img src="images/cereals.png" alt="Oops"><span>CEREAL</span>
+            </div>
+            <ul class="numbers" id="numbers">
+                <li class="number" id="number1"></li>
+                <li class="number" id="number1"></li>
+                <li class="number" id="number1"></li>
+                <li class="number" id="number1"></li>
+                <li class="number" id="number1"></li>
+
+
+            </ul>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-left">
+                    <p>&copy copyright 2018 by center for Science and Environment All right Reserved</p>
+                </div>
+                <div class="footer-right">
+                            <div class="twt-image">
+                     <a href="#"><img src="images/icons8-twitter-circled-30.png"></a>
+                 </div>
+                  <div class="twt-image">
+                       <a href="#">  <img src="images/icons8-facebook-24.png"></a> 
+                   </div>
+                    <div class="twt-image">
+                         <a href="#">    <img src="images/icons8-linkedin-24.png"> </a>
+                     </div>
+                      <div class="twt-image">
+                         <a href="#"><img src="images/icons8-google-plus-24.png"></a>
+                            
+                         </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            document.getElementById('login').innerHTML = 'PRIYA TYAGI';
+             $('.number').click(function(){
+            var url="screen4.html"
+            $(location).attr('href', url);
+            });
+        });
+    </script>
+     <script type="text/javascript">
+
+        $(function(){
+
+            $('input[name=gender]').click(function(){
+            var selectedVal =  $(this).val();
+            debugger;
+                $('div.image2').css('display', 'none');
+
+            if(selectedVal == 'male'){
+                $('div#female').css('display', 'none');
+                $('div#male').css('display', 'block');
+
+            }else if(selectedVal == 'female'){
+                $('div#female').css('display', 'block');
+                $('div#male').css('display', 'none');
+
+            }
+        });
+
+
+
+
+        })
+
+           
+    
+    </script>
+</body>
+</html>

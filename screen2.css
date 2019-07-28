@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+.container{
+	width: 1140px;
+	margin: auto;
+}
+.left-logo {
+    display: inline-block;
+}
+
+.login {
+    float: right;
+    padding-top: 20px;
+}
+.login a{
+    color:#5C69AA
+}
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #E1E1E1;
+}
+
+section{
+    background-color: #F1F1F1;
+}
+
+   .navigation ul li {
+    display:inline-block;
+    padding: 10px 30px;
+}
+.navigation ul li:hover{
+        background-color: #6FBA1C;
+} 
+.navigation ul li a:hover{
+   color: white;      
+} 
+.navigation ul li a {
+        color:black;
+        font-family: 'gotham-book', Fallback, sans-serif;
+ }
+     
+.screen1-left {
+    width: 29%;
+    background-color: #6FBA1C;
+    display: inline-block;
+    height: 550px;
+    position: relative;
+}
+
+.screen1-left:after {
+        left: -65%;
+        background: #6FBA1C;
+        content: '';
+        width: 65%;
+        position: absolute;
+        height: 100%;
+        top: 0;
+}
+.image2 {
+    
+    float:right;
+}
+.image1 {
+    display: inline-block;
+}
+.screen1-right{
+    width:70%;
+    float:right;
+    
+}
+
+#text{
+    
+    padding-left: 40px;
+     color: #808080;
+    font-size:30px;//this is single change in screen2
+}
+#text1{
+    font-weight:bold;
+    color: black;
+}
+.cereal{
+	    width: 30%;
+    display: inline-block;
+    float: left;
+    margin-left: 52px;
+    margin-top: 50px;
+}
+.cereal span{
+    position: relative;
+    top:20px;
+    left: 84px;
+    font-weight: bold;
+    font-family: 'gotham-book', Fallback, sans-serif;
+}
+.numbers{
+	display: inline-block;
+	width: 44%;
+	margin-left: 67px;
+	}
+
+ul.numbers > li {
+    position: relative;
+   
+    border-radius: 50%;
+    list-style: none;
+    width: 31px;
+    height: 23px;
+    padding: 15px 8px 8px 8px;
+    background: #fff;
+    color: #666;
+    text-align: center;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background-color: #1b3393;
+    color: white;
+   
+    transition: background-color 350ms;
+}
+
+ul.numbers:hover > li {
+       background-color: #6FBA1C;
+}
+
+
+ul.numbers > li:hover ~ li {
+   
+     background-color: #1b3393;
+}
+#numbers{
+margin-top: 80px;
+}
+#number1{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+footer {
+    background-color: #2C2C2C;
+}
+
+.footer {
+    padding: 30px 20px;
+}
+
+.footer-left {
+    display: inline-block;
+}
+
+    .footer-left p {
+        color:#585152;
+    }
+
+.footer-right {
+    float: right;
+}
+
+.type  li {
+    display:inline-block;
+    padding: 10px 30px;
+    position: relative;
+    left: 40px;
+    background-color: #DBDBDB;
+}
+.type  li:hover{
+        background-color: #6FBA1C;
+} 
+.type  li a:hover{
+        color: white;
+} 
+.type  li a {
+        color:#605F5F;
+        font-family: 'gotham-book', Fallback, sans-serif;
+}
+ .numbers1 li{
+        display: inline-block;
+         font-family: 'gotham-book', Fallback, sans-serif;
+       color: #605F5F;
+}
+.numbers1{
+        position: relative;
+        left:75px;
+ }
+.numbers1 li:nth-child(2){
+        padding-left: 14px;
+        padding-right: 10px;
+    }
+.numbers1 li:nth-child(3){
+        padding-left: 9px;
+        padding-right: 10px;
+}
+.numbers1 li:nth-child(4){
+        padding-left: 16px;
+        padding-right: 10px;
+}
+.twt-image{
+    display: inline-block;
+}

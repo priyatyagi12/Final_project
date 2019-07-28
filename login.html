@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="login.css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div class="popup" id="pop">
+        <h2>C S E</h2>
+       <input type="text" id="username" placeholder="Username" maxlength="20" />
+        <input type="text" id="password" placeholder="Password" maxlength="20" />
+        <button type="submit"id="button1" >Login</button>
+        <div class="cross">x</div>
+    </div>
+    <script>
+        $('#button1').click(function () {
+            debugger
+            if ($('#username').val() == "") {
+                debugger
+                $("#username").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>Please enter Username!</div>");
+            }
+            else if ($('#password').val() == "") {
+                $("#password").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>Please enter Password!</div>");
+            }
+
+        });
+    </script>
+</body>
+</html>

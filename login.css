@@ -1,0 +1,45 @@
+﻿.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #88bb73;
+    color: white;
+    border-radius: 4px;
+}
+
+input {
+    display: block;
+    margin-bottom: 20px;
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: #88bb73;
+    border: 0;
+    border-bottom: 1px solid white;
+}
+.popup h2{
+    text-align:center;
+    padding-top:40px;
+}
+
+#button1 {
+    width: 70px;
+    margin-left: 15px;
+    margin-bottom: 21px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+}
+.cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 6px;
+}

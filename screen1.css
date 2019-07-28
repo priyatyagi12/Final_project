@@ -1,0 +1,133 @@
+﻿
+body {
+margin:0; padding:0;}
+
+ul {margin:0; padding:0;}
+
+.container{
+    width:1140px;
+    margin:auto;
+}
+.left-logo{
+    display:inline-block;
+}
+.login {
+    float: right;
+    padding-top: 20px;
+}
+.login a{
+    color:#5C69AA
+}
+a{
+    text-decoration:none;
+}
+nav{
+    background-color:#E1E1E1;
+}
+section{
+    background-color: #F1F1F1;
+}
+
+.navigation ul li {
+    display:inline-block;
+    padding: 10px 30px;
+}
+.navigation ul li:hover{
+        background-color: #6FBA1C;
+} 
+.navigation ul li a:hover{
+        color: white;
+ } 
+.navigation ul li a {
+        color:black;
+        font-family: 'gotham-book', Fallback, sans-serif;
+}
+.navigation ul li:first-child{
+    background-color: #6FBA1C;
+}
+
+
+.screen1-left {
+    width: 29%;
+    background-color: #6FBA1C;
+    display: inline-block;
+    height:550px;
+    position:relative;
+}
+
+.screen1-left:after {
+        left: -65%;
+        background: #6FBA1C;
+        content: '';
+        width: 65%;
+        position: absolute;
+        height: 100%;
+        top: 0;
+    }
+.image1 {
+    display: inline-block;
+}
+.image2 {
+    
+    float:right;
+}
+.screen1-right{
+    width:70%;
+    float:right;
+    
+}
+#text{
+    text-align:center;
+    font-size:40px;
+     color: #808080;
+      font-family: 'gotham-book', Fallback, sans-serif;
+}
+#text1{
+    font-weight:bold;
+    color: black;
+}
+#txtname, #txtmobile ,label{
+    padding: 5px 10px;
+    width: 43%;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+select {
+    width: 46%;
+    margin-left: 25px;
+    padding: 5px 10px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+#continue_button {
+    width: 96%;
+    padding: 10px;
+    border: none;
+    margin-left: 25px;
+    background-color: #1b3393;
+    color: white;
+
+}
+footer {
+    background-color: #2C2C2C;
+}
+
+.footer {
+    padding: 30px 20px;
+}
+
+.footer-left {
+    display: inline-block;
+}
+
+.footer-left p {
+       color:#585152;
+}
+
+.footer-right {
+    float: right;
+}
+.twt-image{
+    display: inline-block;
+}
